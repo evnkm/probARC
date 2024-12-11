@@ -104,9 +104,10 @@ if __name__ == '__main__':
                 test_count = 1       # One example always goes to test
                 
                 # Create new task data structure
+                combined_tasks = task_data['train'] + task_data['test']
                 new_task_data = {
-                    'train': task_data['train'][:train_count],
-                    'test': task_data['test'][:test_count]
+                    'train': combined_tasks[:train_count],
+                    'test': combined_tasks[train_count:train_count+test_count]
                 }
                 
                 # Create filename (e.g., "AboveBelow2_3.json")
