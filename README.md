@@ -1,2 +1,2 @@
 # probARC
-Using Probabilistic Programming for ARC Tasks
+Comparing human performance to induction for ConceptARC Tasks
